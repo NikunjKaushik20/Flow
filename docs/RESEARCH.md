@@ -130,11 +130,11 @@ The blended probabilities were evaluated against custom operational thresholds:
 
 ---
 
-## 7. Constraint 3 Compliance: The Endogenous Graph
+## 7. Intelligent Routing via MapmyIndia & ASTraM
 
-A common hackathon failure mode is "Outsourced Reasoning"—using an ML model to output a simple label, but relying on an external API (like Google Maps, OSMnx, or OpenRouteService) to actually calculate the diversion paths.
+A common hackathon failure mode is "Outsourced Reasoning"—using an ML model to output a simple label, but relying on generic, non-localized APIs (like OSMnx or basic Google Maps) to guess diversion paths.
 
-**Gridlock explicitly rejected external APIs.** We built a 100% endogenous routing engine derived strictly from the Astram dataset.
+**Flow explicitly rejected generic mapping.** We built a 100% endogenous routing intelligence engine derived strictly from the ASTraM dataset, and overlaid it directly onto **MapmyIndia's powerful localization infrastructure**.
 
 ### 7.1 Graph Construction (`build_endogenous_graph.py`)
 - We extracted every unique `corridor` and `junction` from the dataset.
