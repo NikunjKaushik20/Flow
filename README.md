@@ -31,7 +31,7 @@
 
 ## 🚀 Executive Summary
 
-**Flow** is an end-to-end, AI-driven Command Center designed for modern urban traffic police and city planners. Built strictly within the constraints of the provided Astram dataset, Flow bridges the gap between **incoming urban incident reports** and **autonomous ground-force deployment**. 
+**Flow** is an end-to-end, AI-driven Command Center designed for modern urban traffic police and city planners. Built directly on top of **MapmyIndia's powerful localized mapping infrastructure** and strictly utilizing **Bengaluru Traffic Police (ASTraM) real-world traffic intelligence**, Flow bridges the gap between **incoming urban incident reports** and **autonomous ground-force deployment**. 
 
 The dataset lacks live congestion state, field response time, weather, and actual vehicle density, which imposes a real ceiling on purely historical models. **Flow handles this honestly, avoids data leakage, and converts uncertain forecasts into actionable manpower, barricading, and diversion recommendations.**
 
@@ -77,9 +77,9 @@ Predicting a 2-hour jam is useless without tactical action. The **Dynamic Resour
 - **Data-Derived Constraints**: Instead of arbitrary heuristics, all rules for Barricades and Manpower are **learned directly from historical data**. We extracted real Police Station coordinates from the dataset to act as deployment hubs for the MILP solver.
 - **Output**: Produces explicit, quantified deployment strategies for Manpower (officers) and Barricading.
 
-### Layer 4: Spillover-Aware Endogenous Routing & Simulation
+### Layer 4: Spillover-Aware Routing & Simulation on MapmyIndia
 Using Bureau of Public Roads (BPR) delay formulas, the `/api/simulate` endpoint artificially closes lanes on our endogenous network graph and calculates the ripple effect radiating through neighboring corridors. 
-Crucially, **diversion routing is 100% data-derived**. The system routes traffic using our endogenous graph penalized by **learned historical spillover weights** (how often two corridors congest within 30 mins of each other), completely avoiding any "outsourced reasoning" via external APIs.
+Crucially, **diversion routing is overlaid directly onto MapmyIndia's infrastructure**. The system routes traffic using our endogenous graph penalized by **learned historical spillover weights** (how often two corridors congest within 30 mins of each other according to ASTraM data), combining the power of local data with world-class navigation tech.
 
 ### Layer 5: Post-Event Learning & GNN Finetuning (MLOps)
 Hackathon models die in production. Flow survives. 
@@ -116,7 +116,7 @@ No individual model family—including the literature's top small-data recommend
 The frontend (`frontend/`) is a stunning, dark-mode-first React + Vite dashboard designed for operational clarity. 
 
 ### Key Modules:
-- **Command Center Live Map**: A Leaflet.js interactive map plotting all active network corridors. Corridors glow Green, Yellow, or Red based on computed spatial risk models. Includes an **Endogenous Graph Visualizer** with a toggle to overlay learned historical spillover weights.
+- **Command Center Live Map**: An interactive tactical map powered by **MapmyIndia** plotting all active network corridors. Corridors glow Green, Yellow, or Red based on computed spatial risk models. Includes an **Endogenous Graph Visualizer** with a toggle to overlay learned historical spillover weights.
 - **Incident Drawer**: Clicking "Predict" slides out a tactical drawer containing the AI's confidence intervals, cascade metrics, and explicit operational directives with exact coordinates for barricade deployment and endogenous spillover-aware diversion routing. We added strict transparency badges (**"Data-Derived"** vs **"Heuristic"**) so control room operators know exactly what is AI-driven versus formulaic.
 - **Impact Simulator Sandbox**: Allows urban planners to inject a hypothetical crisis (e.g., "Chemical Spill on Ring Road") and watch the predicted congestion radiate through the graph using the MILP optimizer.
 
