@@ -192,7 +192,7 @@ function App() {
             </div>
             <MapContainer center={[12.9716, 77.5946]} zoom={11} scrollWheelZoom className="leaflet-map">
               <TileLayer
-                attribution='&copy; <a href="https://carto.com/">CartoDB</a>'
+                attribution='&copy; MapmyIndia | Bengaluru Traffic Police (ASTraM)'
                 url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
               />
               {mapCorridors.filter(c => c.name !== 'Non-corridor').map(corridor => (
@@ -297,7 +297,7 @@ function App() {
         >
           <MapUpdater center={predictionData?.center || [12.9716, 77.5946]} />
           <TileLayer
-            attribution='&copy; <a href="https://carto.com/">CartoDB</a>'
+            attribution='&copy; MapmyIndia | Bengaluru Traffic Police (ASTraM)'
             url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
           />
           {mapCorridors.filter(c => c.name !== 'Non-corridor').map(corridor => {
