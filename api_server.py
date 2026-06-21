@@ -864,7 +864,7 @@ def process_predict_logic(req: Dict[str, Any]):
                 "gnn_ag_agree": bool(gnn_ag_agree),
                 "tree_ag_agree": bool(tree_ag_agree),
                 "avg_max_probability": round(float(avg_max_prob), 3),
-                "model_votes": preds
+                "model_votes": [int(x) for x in preds]
             },
         })
 
