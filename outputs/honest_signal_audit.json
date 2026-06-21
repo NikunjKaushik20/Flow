@@ -1,0 +1,1088 @@
+{
+  "valid_rows_all_events": 2533,
+  "bucket_counts": {
+    "<30min": 852,
+    "30min-2hr": 1335,
+    "2hr+": 346
+  },
+  "event_type_counts": {
+    "unplanned": 2509,
+    "planned": 24
+  },
+  "field_summaries": {
+    "event_type": {
+      "coverage": {
+        "present": 2533
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.528,
+      "top_pure_values_min20": [
+        {
+          "value": "unplanned",
+          "count": 2509,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.529,
+          "bucket_counts": {
+            "<30min": 842,
+            "30min-2hr": 1327,
+            "2hr+": 340
+          }
+        },
+        {
+          "value": "planned",
+          "count": 24,
+          "dominant_bucket": "<30min",
+          "dominant_share": 0.417,
+          "bucket_counts": {
+            "30min-2hr": 8,
+            "<30min": 10,
+            "2hr+": 6
+          }
+        }
+      ]
+    },
+    "event_cause": {
+      "coverage": {
+        "present": 2533
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.549,
+      "top_pure_values_min20": [
+        {
+          "value": "accident",
+          "count": 91,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.692,
+          "bucket_counts": {
+            "30min-2hr": 63,
+            "<30min": 27,
+            "2hr+": 1
+          }
+        },
+        {
+          "value": "congestion",
+          "count": 22,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.636,
+          "bucket_counts": {
+            "30min-2hr": 14,
+            "2hr+": 4,
+            "<30min": 4
+          }
+        },
+        {
+          "value": "construction",
+          "count": 53,
+          "dominant_bucket": "2hr+",
+          "dominant_share": 0.623,
+          "bucket_counts": {
+            "2hr+": 33,
+            "30min-2hr": 8,
+            "<30min": 12
+          }
+        },
+        {
+          "value": "road_conditions",
+          "count": 31,
+          "dominant_bucket": "2hr+",
+          "dominant_share": 0.581,
+          "bucket_counts": {
+            "30min-2hr": 8,
+            "2hr+": 18,
+            "<30min": 5
+          }
+        },
+        {
+          "value": "vehicle_breakdown",
+          "count": 1841,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.564,
+          "bucket_counts": {
+            "<30min": 696,
+            "30min-2hr": 1039,
+            "2hr+": 106
+          }
+        },
+        {
+          "value": "pot_holes",
+          "count": 32,
+          "dominant_bucket": "<30min",
+          "dominant_share": 0.5,
+          "bucket_counts": {
+            "<30min": 16,
+            "2hr+": 11,
+            "30min-2hr": 5
+          }
+        },
+        {
+          "value": "water_logging",
+          "count": 101,
+          "dominant_bucket": "2hr+",
+          "dominant_share": 0.485,
+          "bucket_counts": {
+            "30min-2hr": 41,
+            "2hr+": 49,
+            "<30min": 11
+          }
+        },
+        {
+          "value": "tree_fall",
+          "count": 104,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.442,
+          "bucket_counts": {
+            "2hr+": 43,
+            "30min-2hr": 46,
+            "<30min": 15
+          }
+        },
+        {
+          "value": "others",
+          "count": 240,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.429,
+          "bucket_counts": {
+            "30min-2hr": 103,
+            "2hr+": 79,
+            "<30min": 58
+          }
+        }
+      ]
+    },
+    "corridor": {
+      "coverage": {
+        "present": 2529,
+        "missing": 4
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.529,
+      "top_pure_values_min20": [
+        {
+          "value": "hennur main road",
+          "count": 22,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.773,
+          "bucket_counts": {
+            "30min-2hr": 17,
+            "2hr+": 4,
+            "<30min": 1
+          }
+        },
+        {
+          "value": "old madras road",
+          "count": 64,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.625,
+          "bucket_counts": {
+            "30min-2hr": 40,
+            "<30min": 21,
+            "2hr+": 3
+          }
+        },
+        {
+          "value": "hosur road",
+          "count": 94,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.617,
+          "bucket_counts": {
+            "<30min": 27,
+            "30min-2hr": 58,
+            "2hr+": 9
+          }
+        },
+        {
+          "value": "west of chord road",
+          "count": 46,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.609,
+          "bucket_counts": {
+            "30min-2hr": 28,
+            "<30min": 15,
+            "2hr+": 3
+          }
+        },
+        {
+          "value": "orr west 1",
+          "count": 63,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.603,
+          "bucket_counts": {
+            "2hr+": 8,
+            "<30min": 17,
+            "30min-2hr": 38
+          }
+        },
+        {
+          "value": "varthur road",
+          "count": 25,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.56,
+          "bucket_counts": {
+            "30min-2hr": 14,
+            "2hr+": 4,
+            "<30min": 7
+          }
+        },
+        {
+          "value": "mysore road",
+          "count": 298,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.557,
+          "bucket_counts": {
+            "30min-2hr": 166,
+            "<30min": 101,
+            "2hr+": 31
+          }
+        },
+        {
+          "value": "orr east 2",
+          "count": 31,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.548,
+          "bucket_counts": {
+            "2hr+": 3,
+            "<30min": 11,
+            "30min-2hr": 17
+          }
+        },
+        {
+          "value": "magadi road",
+          "count": 97,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.536,
+          "bucket_counts": {
+            "30min-2hr": 52,
+            "<30min": 32,
+            "2hr+": 13
+          }
+        },
+        {
+          "value": "bellary road 2",
+          "count": 119,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.529,
+          "bucket_counts": {
+            "30min-2hr": 63,
+            "<30min": 37,
+            "2hr+": 19
+          }
+        },
+        {
+          "value": "non-corridor",
+          "count": 912,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.521,
+          "bucket_counts": {
+            "30min-2hr": 475,
+            "2hr+": 152,
+            "<30min": 285
+          }
+        },
+        {
+          "value": "orr north 1",
+          "count": 73,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.521,
+          "bucket_counts": {
+            "30min-2hr": 38,
+            "<30min": 20,
+            "2hr+": 15
+          }
+        }
+      ]
+    },
+    "priority": {
+      "coverage": {
+        "present": 2532,
+        "missing": 1
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.527,
+      "top_pure_values_min20": [
+        {
+          "value": "high",
+          "count": 1612,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.53,
+          "bucket_counts": {
+            "<30min": 564,
+            "30min-2hr": 854,
+            "2hr+": 194
+          }
+        },
+        {
+          "value": "low",
+          "count": 920,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.523,
+          "bucket_counts": {
+            "30min-2hr": 481,
+            "2hr+": 152,
+            "<30min": 287
+          }
+        }
+      ]
+    },
+    "requires_road_closure": {
+      "coverage": {
+        "present": 2533
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.527,
+      "top_pure_values_min20": [
+        {
+          "value": "false",
+          "count": 2344,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.529,
+          "bucket_counts": {
+            "<30min": 803,
+            "30min-2hr": 1241,
+            "2hr+": 300
+          }
+        },
+        {
+          "value": "true",
+          "count": 189,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.497,
+          "bucket_counts": {
+            "2hr+": 46,
+            "30min-2hr": 94,
+            "<30min": 49
+          }
+        }
+      ]
+    },
+    "veh_type": {
+      "coverage": {
+        "present": 1838,
+        "missing": 695
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.533,
+      "top_pure_values_min20": [
+        {
+          "value": "bmtc_bus",
+          "count": 667,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.609,
+          "bucket_counts": {
+            "30min-2hr": 406,
+            "<30min": 212,
+            "2hr+": 49
+          }
+        },
+        {
+          "value": "private_bus",
+          "count": 120,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.6,
+          "bucket_counts": {
+            "30min-2hr": 72,
+            "<30min": 41,
+            "2hr+": 7
+          }
+        },
+        {
+          "value": "truck",
+          "count": 68,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.588,
+          "bucket_counts": {
+            "<30min": 22,
+            "2hr+": 6,
+            "30min-2hr": 40
+          }
+        },
+        {
+          "value": "heavy_vehicle",
+          "count": 302,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.576,
+          "bucket_counts": {
+            "<30min": 112,
+            "30min-2hr": 174,
+            "2hr+": 16
+          }
+        },
+        {
+          "value": "ksrtc_bus",
+          "count": 71,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.535,
+          "bucket_counts": {
+            "<30min": 31,
+            "2hr+": 2,
+            "30min-2hr": 38
+          }
+        },
+        {
+          "value": "others",
+          "count": 173,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.532,
+          "bucket_counts": {
+            "2hr+": 9,
+            "30min-2hr": 92,
+            "<30min": 72
+          }
+        },
+        {
+          "value": "taxi",
+          "count": 32,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.531,
+          "bucket_counts": {
+            "<30min": 13,
+            "30min-2hr": 17,
+            "2hr+": 2
+          }
+        },
+        {
+          "value": "private_car",
+          "count": 154,
+          "dominant_bucket": "<30min",
+          "dominant_share": 0.526,
+          "bucket_counts": {
+            "30min-2hr": 68,
+            "<30min": 81,
+            "2hr+": 5
+          }
+        },
+        {
+          "value": "lcv",
+          "count": 235,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.523,
+          "bucket_counts": {
+            "30min-2hr": 123,
+            "<30min": 102,
+            "2hr+": 10
+          }
+        },
+        {
+          "value": "MISSING",
+          "count": 695,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.429,
+          "bucket_counts": {
+            "2hr+": 240,
+            "<30min": 157,
+            "30min-2hr": 298
+          }
+        }
+      ]
+    },
+    "direction": {
+      "coverage": {
+        "missing": 2533
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.527,
+      "top_pure_values_min20": [
+        {
+          "value": "MISSING",
+          "count": 2533,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.527,
+          "bucket_counts": {
+            "<30min": 852,
+            "30min-2hr": 1335,
+            "2hr+": 346
+          }
+        }
+      ]
+    },
+    "cargo_material": {
+      "coverage": {
+        "missing": 2465,
+        "present": 68
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.533,
+      "top_pure_values_min20": [
+        {
+          "value": "MISSING",
+          "count": 2465,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.525,
+          "bucket_counts": {
+            "<30min": 830,
+            "30min-2hr": 1295,
+            "2hr+": 340
+          }
+        }
+      ]
+    },
+    "reason_breakdown": {
+      "coverage": {
+        "missing": 2465,
+        "present": 68
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.536,
+      "top_pure_values_min20": [
+        {
+          "value": "MISSING",
+          "count": 2465,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.525,
+          "bucket_counts": {
+            "<30min": 830,
+            "30min-2hr": 1295,
+            "2hr+": 340
+          }
+        }
+      ]
+    },
+    "age_of_truck": {
+      "coverage": {
+        "missing": 2465,
+        "present": 68
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.529,
+      "top_pure_values_min20": [
+        {
+          "value": "MISSING",
+          "count": 2465,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.525,
+          "bucket_counts": {
+            "<30min": 830,
+            "30min-2hr": 1295,
+            "2hr+": 340
+          }
+        },
+        {
+          "value": "10",
+          "count": 22,
+          "dominant_bucket": "<30min",
+          "dominant_share": 0.5,
+          "bucket_counts": {
+            "<30min": 11,
+            "2hr+": 3,
+            "30min-2hr": 8
+          }
+        }
+      ]
+    },
+    "police_station": {
+      "coverage": {
+        "present": 2533
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.532,
+      "top_pure_values_min20": [
+        {
+          "value": "pulikeshinagar(f.town)",
+          "count": 21,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.81,
+          "bucket_counts": {
+            "30min-2hr": 17,
+            "<30min": 4
+          }
+        },
+        {
+          "value": "shivajinagar",
+          "count": 24,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.792,
+          "bucket_counts": {
+            "2hr+": 1,
+            "30min-2hr": 19,
+            "<30min": 4
+          }
+        },
+        {
+          "value": "malleshwaram",
+          "count": 22,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.727,
+          "bucket_counts": {
+            "30min-2hr": 16,
+            "<30min": 4,
+            "2hr+": 2
+          }
+        },
+        {
+          "value": "electronic city",
+          "count": 61,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.689,
+          "bucket_counts": {
+            "30min-2hr": 42,
+            "<30min": 15,
+            "2hr+": 4
+          }
+        },
+        {
+          "value": "banashankari",
+          "count": 50,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.68,
+          "bucket_counts": {
+            "2hr+": 3,
+            "30min-2hr": 34,
+            "<30min": 13
+          }
+        },
+        {
+          "value": "adugodi",
+          "count": 31,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.645,
+          "bucket_counts": {
+            "30min-2hr": 20,
+            "2hr+": 5,
+            "<30min": 6
+          }
+        },
+        {
+          "value": "ashok nagar",
+          "count": 53,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.604,
+          "bucket_counts": {
+            "30min-2hr": 32,
+            "<30min": 8,
+            "2hr+": 13
+          }
+        },
+        {
+          "value": "cubbon park",
+          "count": 50,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.6,
+          "bucket_counts": {
+            "30min-2hr": 30,
+            "<30min": 15,
+            "2hr+": 5
+          }
+        },
+        {
+          "value": "jayanagara",
+          "count": 39,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.59,
+          "bucket_counts": {
+            "2hr+": 7,
+            "30min-2hr": 23,
+            "<30min": 9
+          }
+        },
+        {
+          "value": "madiwala",
+          "count": 54,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.574,
+          "bucket_counts": {
+            "<30min": 19,
+            "30min-2hr": 31,
+            "2hr+": 4
+          }
+        },
+        {
+          "value": "banaswadi",
+          "count": 55,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.564,
+          "bucket_counts": {
+            "30min-2hr": 31,
+            "2hr+": 11,
+            "<30min": 13
+          }
+        },
+        {
+          "value": "halasuru gate",
+          "count": 120,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.558,
+          "bucket_counts": {
+            "30min-2hr": 67,
+            "2hr+": 7,
+            "<30min": 46
+          }
+        }
+      ]
+    },
+    "zone": {
+      "coverage": {
+        "missing": 1418,
+        "present": 1115
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.527,
+      "top_pure_values_min20": [
+        {
+          "value": "south zone 2",
+          "count": 70,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.657,
+          "bucket_counts": {
+            "30min-2hr": 46,
+            "<30min": 17,
+            "2hr+": 7
+          }
+        },
+        {
+          "value": "west zone 1",
+          "count": 180,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.617,
+          "bucket_counts": {
+            "30min-2hr": 111,
+            "<30min": 52,
+            "2hr+": 17
+          }
+        },
+        {
+          "value": "west zone 2",
+          "count": 162,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.58,
+          "bucket_counts": {
+            "2hr+": 14,
+            "<30min": 54,
+            "30min-2hr": 94
+          }
+        },
+        {
+          "value": "north zone 1",
+          "count": 76,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.579,
+          "bucket_counts": {
+            "2hr+": 8,
+            "30min-2hr": 44,
+            "<30min": 24
+          }
+        },
+        {
+          "value": "central zone 2",
+          "count": 230,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.557,
+          "bucket_counts": {
+            "<30min": 81,
+            "30min-2hr": 128,
+            "2hr+": 21
+          }
+        },
+        {
+          "value": "east zone 2",
+          "count": 69,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.551,
+          "bucket_counts": {
+            "<30min": 17,
+            "30min-2hr": 38,
+            "2hr+": 14
+          }
+        },
+        {
+          "value": "central zone 1",
+          "count": 80,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.55,
+          "bucket_counts": {
+            "30min-2hr": 44,
+            "<30min": 26,
+            "2hr+": 10
+          }
+        },
+        {
+          "value": "east zone 1",
+          "count": 71,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.549,
+          "bucket_counts": {
+            "30min-2hr": 39,
+            "2hr+": 10,
+            "<30min": 22
+          }
+        },
+        {
+          "value": "south zone 1",
+          "count": 41,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.537,
+          "bucket_counts": {
+            "<30min": 14,
+            "30min-2hr": 22,
+            "2hr+": 5
+          }
+        },
+        {
+          "value": "MISSING",
+          "count": 1418,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.499,
+          "bucket_counts": {
+            "<30min": 493,
+            "30min-2hr": 708,
+            "2hr+": 217
+          }
+        },
+        {
+          "value": "north zone 2",
+          "count": 136,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.449,
+          "bucket_counts": {
+            "30min-2hr": 61,
+            "<30min": 52,
+            "2hr+": 23
+          }
+        }
+      ]
+    },
+    "junction": {
+      "coverage": {
+        "missing": 1653,
+        "present": 880
+      },
+      "weighted_majority_accuracy_if_group_rule": 0.559,
+      "top_pure_values_min20": [
+        {
+          "value": "yeshwanthpuracircle",
+          "count": 29,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.586,
+          "bucket_counts": {
+            "<30min": 12,
+            "30min-2hr": 17
+          }
+        },
+        {
+          "value": "MISSING",
+          "count": 1653,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.515,
+          "bucket_counts": {
+            "<30min": 560,
+            "2hr+": 241,
+            "30min-2hr": 852
+          }
+        },
+        {
+          "value": "sattelitebusstandjunc",
+          "count": 22,
+          "dominant_bucket": "<30min",
+          "dominant_share": 0.5,
+          "bucket_counts": {
+            "30min-2hr": 10,
+            "<30min": 11,
+            "2hr+": 1
+          }
+        },
+        {
+          "value": "mekhricircle",
+          "count": 25,
+          "dominant_bucket": "30min-2hr",
+          "dominant_share": 0.44,
+          "bucket_counts": {
+            "30min-2hr": 11,
+            "2hr+": 4,
+            "<30min": 10
+          }
+        }
+      ]
+    }
+  },
+  "hour_top_patterns": {
+    "0": {
+      "count": 142,
+      "bucket_counts": {
+        "30min-2hr": 67,
+        "2hr+": 16,
+        "<30min": 59
+      },
+      "purity": 0.472
+    },
+    "1": {
+      "count": 135,
+      "bucket_counts": {
+        "<30min": 59,
+        "30min-2hr": 68,
+        "2hr+": 8
+      },
+      "purity": 0.504
+    },
+    "2": {
+      "count": 137,
+      "bucket_counts": {
+        "30min-2hr": 67,
+        "<30min": 54,
+        "2hr+": 16
+      },
+      "purity": 0.489
+    },
+    "3": {
+      "count": 141,
+      "bucket_counts": {
+        "<30min": 51,
+        "30min-2hr": 76,
+        "2hr+": 14
+      },
+      "purity": 0.539
+    },
+    "4": {
+      "count": 198,
+      "bucket_counts": {
+        "<30min": 63,
+        "30min-2hr": 109,
+        "2hr+": 26
+      },
+      "purity": 0.551
+    },
+    "5": {
+      "count": 227,
+      "bucket_counts": {
+        "30min-2hr": 117,
+        "2hr+": 42,
+        "<30min": 68
+      },
+      "purity": 0.515
+    },
+    "6": {
+      "count": 216,
+      "bucket_counts": {
+        "2hr+": 40,
+        "<30min": 62,
+        "30min-2hr": 114
+      },
+      "purity": 0.528
+    },
+    "7": {
+      "count": 160,
+      "bucket_counts": {
+        "30min-2hr": 80,
+        "<30min": 51,
+        "2hr+": 29
+      },
+      "purity": 0.5
+    },
+    "8": {
+      "count": 109,
+      "bucket_counts": {
+        "<30min": 43,
+        "30min-2hr": 56,
+        "2hr+": 10
+      },
+      "purity": 0.514
+    },
+    "9": {
+      "count": 42,
+      "bucket_counts": {
+        "2hr+": 5,
+        "<30min": 18,
+        "30min-2hr": 19
+      },
+      "purity": 0.452
+    },
+    "10": {
+      "count": 27,
+      "bucket_counts": {
+        "<30min": 9,
+        "2hr+": 7,
+        "30min-2hr": 11
+      },
+      "purity": 0.407
+    },
+    "11": {
+      "count": 15,
+      "bucket_counts": {
+        "30min-2hr": 6,
+        "2hr+": 5,
+        "<30min": 4
+      },
+      "purity": 0.4
+    },
+    "12": {
+      "count": 10,
+      "bucket_counts": {
+        "30min-2hr": 4,
+        "2hr+": 6
+      },
+      "purity": 0.6
+    },
+    "13": {
+      "count": 7,
+      "bucket_counts": {
+        "<30min": 3,
+        "30min-2hr": 2,
+        "2hr+": 2
+      },
+      "purity": 0.429
+    },
+    "14": {
+      "count": 2,
+      "bucket_counts": {
+        "<30min": 1,
+        "30min-2hr": 1
+      },
+      "purity": 0.5
+    },
+    "16": {
+      "count": 4,
+      "bucket_counts": {
+        "30min-2hr": 3,
+        "2hr+": 1
+      },
+      "purity": 0.75
+    },
+    "17": {
+      "count": 12,
+      "bucket_counts": {
+        "30min-2hr": 11,
+        "2hr+": 1
+      },
+      "purity": 0.917
+    },
+    "18": {
+      "count": 66,
+      "bucket_counts": {
+        "<30min": 20,
+        "30min-2hr": 40,
+        "2hr+": 6
+      },
+      "purity": 0.606
+    },
+    "19": {
+      "count": 165,
+      "bucket_counts": {
+        "2hr+": 21,
+        "<30min": 49,
+        "30min-2hr": 95
+      },
+      "purity": 0.576
+    },
+    "20": {
+      "count": 210,
+      "bucket_counts": {
+        "30min-2hr": 117,
+        "2hr+": 34,
+        "<30min": 59
+      },
+      "purity": 0.557
+    },
+    "21": {
+      "count": 217,
+      "bucket_counts": {
+        "30min-2hr": 125,
+        "<30min": 69,
+        "2hr+": 23
+      },
+      "purity": 0.576
+    },
+    "22": {
+      "count": 161,
+      "bucket_counts": {
+        "30min-2hr": 82,
+        "2hr+": 22,
+        "<30min": 57
+      },
+      "purity": 0.509
+    },
+    "23": {
+      "count": 130,
+      "bucket_counts": {
+        "<30min": 53,
+        "30min-2hr": 65,
+        "2hr+": 12
+      },
+      "purity": 0.5
+    }
+  }
+}

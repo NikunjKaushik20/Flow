@@ -1,0 +1,19 @@
+corridor,total_incidents,avg_impact_score,critical_incidents,planned_events
+Airport New South Road,3,1.0,3,3
+Bannerghata Road,2,1.0,2,2
+Tumkur Road,2,1.0,0,0
+Old Madras Road,3,1.0,3,2
+ORR West 1,2,1.0,1,1
+ORR North 2,3,1.0,0,0
+ORR North 1,9,1.0,7,7
+ORR East 2,4,1.0,2,1
+ORR East 1,4,1.0,2,1
+Non-corridor,50,1.0,36,31
+Mysore Road,11,1.0,5,3
+Magadi Road,5,1.0,2,2
+IRR(Thanisandra road),1,1.0,1,1
+Hosur Road,1,1.0,0,0
+Hennur Main Road,2,1.0,2,2
+Bellary Road 2,10,1.0,9,8
+Bellary Road 1,3,1.0,2,2
+West of Chord Road,1,1.0,1,0

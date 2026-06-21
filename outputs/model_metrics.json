@@ -1,0 +1,69 @@
+{
+    "<30min": {
+        "precision": 0.5294117647058824,
+        "recall": 0.26785714285714285,
+        "f1-score": 0.3557312252964427,
+        "support": 168.0
+    },
+    "30min-2hr": {
+        "precision": 0.5949367088607594,
+        "recall": 0.7094339622641509,
+        "f1-score": 0.6471600688468159,
+        "support": 265.0
+    },
+    "2hr+": {
+        "precision": 0.5,
+        "recall": 0.7352941176470589,
+        "f1-score": 0.5952380952380952,
+        "support": 68.0
+    },
+    "accuracy": 0.5768,
+    "macro avg": {
+        "precision": 0.5414494911888806,
+        "recall": 0.5708617409227842,
+        "f1-score": 0.5327097964604514,
+        "support": 501.0
+    },
+    "weighted avg": {
+        "precision": 0.5600786513347096,
+        "recall": 0.564870259481038,
+        "f1-score": 0.5423881328750481,
+        "support": 501.0
+    },
+    "best_approach": "Tree 80% + GNN 15% + AutoGluon 5%",
+    "macro_f1": 0.549,
+    "critical_recall": 0.7058,
+    "model_artifact": "models/layer2_honest_combo_grid.pkl",
+    "selected_models": [
+        "XGB/CatBoost/RF (80%)",
+        "Gridlock GNN (15%)",
+        "AutoGluon (5%)"
+    ],
+    "ensemble_params": {
+        "model_names": [
+            "gb_base_weighted",
+            "catboost_unweighted",
+            "catboost_balanced"
+        ],
+        "weights": [
+            0.25,
+            0.5,
+            0.25
+        ],
+        "critical_threshold": null,
+        "minor_threshold": null,
+        "accuracy": 0.5508982035928144,
+        "macro_f1": 0.4952246676384607,
+        "critical_recall": 0.7058823529411765,
+        "score": 0.6564206703566604
+    },
+    "kfold_validation": {
+        "accuracy_mean": 0.5461408119013771,
+        "accuracy_std": 0.007571099827538912,
+        "macro_f1_mean": 0.49729273714562544,
+        "macro_f1_std": 0.011931859473337416,
+        "critical_recall_mean": 0.6666666666666666,
+        "critical_recall_std": 0.08217338216627798
+    },
+    "evaluation_note": "Weighted RF/CatBoost ensemble selected on calibration split; holdout and 3-fold validation recorded."
+}

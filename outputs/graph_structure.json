@@ -1,0 +1,404 @@
+{
+    "nodes": [
+        {
+            "id": "Airport New South Road",
+            "lat": 13.021601749444445,
+            "lon": 77.62879494500001
+        },
+        {
+            "id": "Bannerghata Road",
+            "lat": 12.90027713235294,
+            "lon": 77.59882942352941
+        },
+        {
+            "id": "Bellary Road 1",
+            "lat": 13.020675348421053,
+            "lon": 77.58597311754386
+        },
+        {
+            "id": "Bellary Road 2",
+            "lat": 13.099765732500002,
+            "lon": 77.60121852207317
+        },
+        {
+            "id": "Cbd 1",
+            "lat": 12.9809131,
+            "lon": 77.6071947
+        },
+        {
+            "id": "Cbd 2",
+            "lat": 12.984512163529411,
+            "lon": 77.59388038
+        },
+        {
+            "id": "Hennur Main Road",
+            "lat": 13.044059160869566,
+            "lon": 77.62526272347826
+        },
+        {
+            "id": "Hosur Road",
+            "lat": 12.9210721997351,
+            "lon": 77.62157942311258
+        },
+        {
+            "id": "Irr(Thanisandra Road)",
+            "lat": 12.93413377471698,
+            "lon": 77.62468061377358
+        },
+        {
+            "id": "Magadi Road",
+            "lat": 12.98217181765625,
+            "lon": 77.53823840390625
+        },
+        {
+            "id": "Mysore Road",
+            "lat": 12.95911951867052,
+            "lon": 77.56656678375722
+        },
+        {
+            "id": "Non-Corridor",
+            "lat": 12.97407748759336,
+            "lon": 77.59518887213001
+        },
+        {
+            "id": "Old Airport Road",
+            "lat": 12.959071153913044,
+            "lon": 77.65924839565217
+        },
+        {
+            "id": "Old Madras Road",
+            "lat": 12.98122255593985,
+            "lon": 77.62942331849624
+        },
+        {
+            "id": "Orr East 1",
+            "lat": 12.925195767948718,
+            "lon": 77.65873249679487
+        },
+        {
+            "id": "Orr East 2",
+            "lat": 12.95748895,
+            "lon": 77.70076645
+        },
+        {
+            "id": "Orr North 1",
+            "lat": 13.03202010617284,
+            "lon": 77.6296926617284
+        },
+        {
+            "id": "Orr North 2",
+            "lat": 13.04349106060606,
+            "lon": 77.55638951212121
+        },
+        {
+            "id": "Orr West 1",
+            "lat": 12.92420711359375,
+            "lon": 77.55486472453126
+        },
+        {
+            "id": "Tumkur Road",
+            "lat": 13.03120828078341,
+            "lon": 77.53422179861751
+        },
+        {
+            "id": "Varthur Road",
+            "lat": 12.956318159090909,
+            "lon": 77.70888768818182
+        },
+        {
+            "id": "West Of Chord Road",
+            "lat": 12.980061529726028,
+            "lon": 77.54555777917808
+        }
+    ],
+    "edges": [
+        {
+            "source": "Airport New South Road",
+            "target": "Orr North 1",
+            "weight": 1.1607227712528747,
+            "junction": "Hennurroad-Orr Junc"
+        },
+        {
+            "source": "Bannerghata Road",
+            "target": "Non-Corridor",
+            "weight": 8.201800476644658,
+            "junction": "28Thmainjayanagarjunc"
+        },
+        {
+            "source": "Bellary Road 1",
+            "target": "West Of Chord Road",
+            "weight": 6.359904653573226,
+            "junction": "Chandralayoutjunc-Nearwatertank"
+        },
+        {
+            "source": "Bellary Road 1",
+            "target": "Orr North 1",
+            "weight": 5.013591290778409,
+            "junction": "Hebbalflyoverjunc"
+        },
+        {
+            "source": "Bellary Road 1",
+            "target": "Non-Corridor",
+            "weight": 5.272547631998658,
+            "junction": "Kodigehallicross"
+        },
+        {
+            "source": "Bellary Road 1",
+            "target": "Bellary Road 2",
+            "weight": 8.940642586279486,
+            "junction": "Kodigehallicross"
+        },
+        {
+            "source": "Bellary Road 1",
+            "target": "Tumkur Road",
+            "weight": 5.862168078006736,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Bellary Road 1",
+            "target": "Magadi Road",
+            "weight": 6.807409070960178,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Bellary Road 1",
+            "target": "Cbd 2",
+            "weight": 4.108950648349066,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Bellary Road 2",
+            "target": "Non-Corridor",
+            "weight": 13.967439931245073,
+            "junction": "Kodigehallicross"
+        },
+        {
+            "source": "Bellary Road 2",
+            "target": "Tumkur Road",
+            "weight": 10.640196878151999,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Bellary Road 2",
+            "target": "Magadi Road",
+            "weight": 14.807093828463078,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Bellary Road 2",
+            "target": "Cbd 2",
+            "weight": 12.819050426013622,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Bellary Road 2",
+            "target": "Orr North 1",
+            "weight": 8.156987024525385,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Cbd 1",
+            "target": "Old Madras Road",
+            "weight": 2.467615740718049,
+            "junction": "Shivajinagar(Brv)Junction"
+        },
+        {
+            "source": "Cbd 1",
+            "target": "Non-Corridor",
+            "weight": 1.533510294471946,
+            "junction": "Shivajinagar(Brv)Junction"
+        },
+        {
+            "source": "Cbd 2",
+            "target": "Non-Corridor",
+            "weight": 1.1673201075471944,
+            "junction": "Indianexpressjunction"
+        },
+        {
+            "source": "Cbd 2",
+            "target": "Old Madras Road",
+            "weight": 3.9621278501448223,
+            "junction": "Queensstatuecircle"
+        },
+        {
+            "source": "Cbd 2",
+            "target": "Tumkur Road",
+            "weight": 8.409430399705043,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Cbd 2",
+            "target": "Magadi Road",
+            "weight": 6.181720175402934,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Cbd 2",
+            "target": "Orr North 1",
+            "weight": 6.603822899622623,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Hennur Main Road",
+            "target": "Orr North 1",
+            "weight": 1.4239322578569233,
+            "junction": "Nagavara-Orr Junction"
+        },
+        {
+            "source": "Hosur Road",
+            "target": "Non-Corridor",
+            "weight": 6.572495236818506,
+            "junction": "Ayyappatemplejunc"
+        },
+        {
+            "source": "Hosur Road",
+            "target": "Irr(Thanisandra Road)",
+            "weight": 1.4901398579493927,
+            "junction": "Ayyappatemplejunc"
+        },
+        {
+            "source": "Hosur Road",
+            "target": "Mysore Road",
+            "weight": 7.424555075060126,
+            "junction": "Johnsonmarket"
+        },
+        {
+            "source": "Hosur Road",
+            "target": "Orr East 1",
+            "weight": 4.149314069166249,
+            "junction": "Silkboardjunc"
+        },
+        {
+            "source": "Irr(Thanisandra Road)",
+            "target": "Non-Corridor",
+            "weight": 5.511307078435328,
+            "junction": "Ayyappatemplejunc"
+        },
+        {
+            "source": "Magadi Road",
+            "target": "Tumkur Road",
+            "weight": 5.4612765196003945,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Magadi Road",
+            "target": "Orr North 1",
+            "weight": 11.561454970743585,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Mysore Road",
+            "target": "Non-Corridor",
+            "weight": 3.584741136937053,
+            "junction": "Bloodbankcircle"
+        },
+        {
+            "source": "Mysore Road",
+            "target": "West Of Chord Road",
+            "weight": 3.292691285819456,
+            "junction": "Kimco Junction"
+        },
+        {
+            "source": "Mysore Road",
+            "target": "Orr West 1",
+            "weight": 4.087173471308381,
+            "junction": "Mysorerd-Ringrdjunc(Nayandanahallii)"
+        },
+        {
+            "source": "Mysore Road",
+            "target": "Old Madras Road",
+            "weight": 7.395872788821132,
+            "junction": "Operahousejunc"
+        },
+        {
+            "source": "Non-Corridor",
+            "target": "Orr East 1",
+            "weight": 8.898860204916778,
+            "junction": "Agarajunction"
+        },
+        {
+            "source": "Non-Corridor",
+            "target": "Old Madras Road",
+            "weight": 3.8819055459598273,
+            "junction": "Begummahaljunc"
+        },
+        {
+            "source": "Non-Corridor",
+            "target": "West Of Chord Road",
+            "weight": 5.54895000478823,
+            "junction": "Bhashyamcircle"
+        },
+        {
+            "source": "Non-Corridor",
+            "target": "Old Airport Road",
+            "weight": 7.303102087397642,
+            "junction": "Domlurwatertank"
+        },
+        {
+            "source": "Non-Corridor",
+            "target": "Tumkur Road",
+            "weight": 9.274255313319916,
+            "junction": "Hesaraghattajunction"
+        },
+        {
+            "source": "Non-Corridor",
+            "target": "Orr West 1",
+            "weight": 7.118805744405666,
+            "junction": "Kanakapurard-Ringrdjunction"
+        },
+        {
+            "source": "Old Airport Road",
+            "target": "Varthur Road",
+            "weight": 5.518428764442465,
+            "junction": "Maratahallibridgejunc"
+        },
+        {
+            "source": "Old Airport Road",
+            "target": "Orr East 1",
+            "weight": 3.7606038683378817,
+            "junction": "Maratahallibridgejunc"
+        },
+        {
+            "source": "Old Airport Road",
+            "target": "Orr East 2",
+            "weight": 4.611849241981718,
+            "junction": "Maratahallibridgejunc"
+        },
+        {
+            "source": "Orr East 1",
+            "target": "Varthur Road",
+            "weight": 6.551959130915842,
+            "junction": "Maratahallibridgejunc"
+        },
+        {
+            "source": "Orr East 1",
+            "target": "Orr East 2",
+            "weight": 5.88373593533126,
+            "junction": "Maratahallibridgejunc"
+        },
+        {
+            "source": "Orr East 2",
+            "target": "Varthur Road",
+            "weight": 0.9107768883050459,
+            "junction": "Maratahallibridgejunc"
+        },
+        {
+            "source": "Orr North 1",
+            "target": "Tumkur Road",
+            "weight": 10.597648929471609,
+            "junction": "Yeshwanthpuracircle"
+        },
+        {
+            "source": "Orr North 2",
+            "target": "Tumkur Road",
+            "weight": 2.813087351068255,
+            "junction": "Goruguntepalyajunc"
+        },
+        {
+            "source": "Tumkur Road",
+            "target": "West Of Chord Road",
+            "weight": 5.815059583033056,
+            "junction": "Tumkurrdmarappanapalyajunc"
+        }
+    ]
+}

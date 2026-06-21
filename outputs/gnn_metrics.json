@@ -1,0 +1,71 @@
+{
+  "gnn_holdout": {
+    "accuracy": 0.49700598802395207,
+    "macro_f1": 0.4592623367031344,
+    "critical_recall": 0.38235294117647056,
+    "per_class": {
+      "<30min": {
+        "precision": 0.4777777777777778,
+        "recall": 0.5119047619047619,
+        "f1-score": 0.49425287356321834,
+        "support": 168.0
+      },
+      "30min-2hr": {
+        "precision": 0.5879828326180258,
+        "recall": 0.5169811320754717,
+        "f1-score": 0.5502008032128514,
+        "support": 265.0
+      },
+      "2hr+": {
+        "precision": 0.29545454545454547,
+        "recall": 0.38235294117647056,
+        "f1-score": 0.33333333333333337,
+        "support": 68.0
+      }
+    }
+  },
+  "gnn_kfold": {
+    "folds": [
+      {
+        "fold": 1,
+        "accuracy": 0.49820359281437127,
+        "macro_f1": 0.458247082542617,
+        "critical_recall": 0.36283185840707965
+      },
+      {
+        "fold": 2,
+        "accuracy": 0.44364508393285373,
+        "macro_f1": 0.4136841341321705,
+        "critical_recall": 0.36283185840707965
+      },
+      {
+        "fold": 3,
+        "accuracy": 0.473621103117506,
+        "macro_f1": 0.4308654559859999,
+        "critical_recall": 0.30973451327433627
+      }
+    ],
+    "accuracy_mean": 0.4718232599549103,
+    "accuracy_std": 0.02230966760355438,
+    "macro_f1_mean": 0.4342655575535958,
+    "macro_f1_std": 0.018350923877932416,
+    "critical_recall_mean": 0.3451327433628319,
+    "critical_recall_std": 0.025030328537576915
+  },
+  "existing_ensemble": {
+    "accuracy": 0.553,
+    "macro_f1": 0.54,
+    "critical_recall": 0.735
+  },
+  "model_architecture": {
+    "type": "GraphSAGE (2-layer, pure PyTorch)",
+    "hidden_dim": 64,
+    "incident_features": 36,
+    "corridor_features": 4,
+    "corridors": 22,
+    "parameters": 24579
+  },
+  "recovered_features": [
+    "authenticated_flag (intake verification flag)"
+  ]
+}

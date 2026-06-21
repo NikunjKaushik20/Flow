@@ -25,11 +25,8 @@ venv/
 .env
 
 # Project Specific
-cache/
-outputs/
 .tabpfn_models/
-data/
-models/
+cache/
 
 # Frontend / Node
 node_modules/

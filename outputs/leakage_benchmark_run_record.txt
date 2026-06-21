@@ -1,0 +1,42 @@
+Gridlock leakage benchmark run record
+====================================
+
+Timestamp: 2026-06-19T15:22:01
+Python: C:\Users\nikun_r4vgzi9\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
+Working directory: D:\Hacks\gridlock\round2
+Script: D:\Hacks\gridlock\round2\scratch\leakage_benchmark.py
+Input dataset: data/Astram event data_anonymized - Astram event data_anonymizedb40ac87.csv
+Output metrics: outputs/leakage_benchmark_metrics.json
+
+Methodology:
+- Filter to valid unplanned incidents with duration between 0 and 1440 minutes.
+- Reconstruct duration from start_datetime and resolved_datetime/closed_datetime.
+- Bucket reconstructed duration using the same thresholds as the training pipeline.
+- Compare reconstructed bucket with the target bucket implied by the same post-event fields.
+
+Result JSON:
+{
+  "run_timestamp_local": "2026-06-19T15:22:01",
+  "python_executable": "C:\\Users\\nikun_r4vgzi9\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "working_directory": "D:\\Hacks\\gridlock\\round2",
+  "script": "D:\\Hacks\\gridlock\\round2\\scratch\\leakage_benchmark.py",
+  "raw_rows": 8173,
+  "valid_unplanned_rows": 2509,
+  "class_counts": {
+    "<30min": 842,
+    "30min-2hr": 1327,
+    "2hr+": 340
+  },
+  "leaky_oracle_accuracy": 1.0,
+  "leaky_oracle_macro_f1": 1.0,
+  "leaky_fields": [
+    "start_datetime",
+    "resolved_datetime",
+    "closed_datetime"
+  ],
+  "why_leaky": "resolved_datetime/closed_datetime are only known after the incident ends; together with start_datetime they reconstruct duration_min and therefore duration_bucket.",
+  "honest_holdout_accuracy": 0.5269461077844312,
+  "honest_holdout_macro_f1": 0.5310055033731236,
+  "honest_cv_macro_f1_mean": 0.4579973601264381,
+  "honest_cv_macro_f1_std": 0.010704309263806815
+}

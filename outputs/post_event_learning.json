@@ -1,0 +1,788 @@
+{
+  "total_events": 200,
+  "overall_accuracy": 0.825,
+  "mean_absolute_error_min": 22.2,
+  "mean_error_min": -1.7,
+  "median_abs_error_min": 8.2,
+  "bias_direction": "calibrated",
+  "corridor_stats": {
+    "Mysore Road": {
+      "mean_error_min": 6.9,
+      "mean_abs_error_min": 28.7,
+      "count": 21,
+      "bias_direction": "over-predicts"
+    },
+    "ORR North 1": {
+      "mean_error_min": -12.7,
+      "mean_abs_error_min": 32.2,
+      "count": 8,
+      "bias_direction": "under-predicts"
+    },
+    "Tumkur Road": {
+      "mean_error_min": -0.2,
+      "mean_abs_error_min": 15.7,
+      "count": 24,
+      "bias_direction": "calibrated"
+    },
+    "Magadi Road": {
+      "mean_error_min": -2.7,
+      "mean_abs_error_min": 17.2,
+      "count": 6,
+      "bias_direction": "calibrated"
+    },
+    "Bellary Road 1": {
+      "mean_error_min": 1.9,
+      "mean_abs_error_min": 13.7,
+      "count": 21,
+      "bias_direction": "calibrated"
+    },
+    "Non-corridor": {
+      "mean_error_min": -8.7,
+      "mean_abs_error_min": 25.5,
+      "count": 72,
+      "bias_direction": "under-predicts"
+    },
+    "Old Airport Road": {
+      "mean_error_min": 0.8,
+      "mean_abs_error_min": 6.9,
+      "count": 5,
+      "bias_direction": "calibrated"
+    },
+    "Bellary Road 2": {
+      "mean_error_min": 18.2,
+      "mean_abs_error_min": 34.5,
+      "count": 9,
+      "bias_direction": "over-predicts"
+    },
+    "Bannerghata Road": {
+      "mean_error_min": -43.5,
+      "mean_abs_error_min": 53.7,
+      "count": 3,
+      "bias_direction": "under-predicts"
+    },
+    "Hosur Road": {
+      "mean_error_min": 21.1,
+      "mean_abs_error_min": 21.1,
+      "count": 4,
+      "bias_direction": "over-predicts"
+    },
+    "Hennur Main Road": {
+      "mean_error_min": 52.8,
+      "mean_abs_error_min": 52.8,
+      "count": 3,
+      "bias_direction": "over-predicts"
+    },
+    "Old Madras Road": {
+      "mean_error_min": -3.8,
+      "mean_abs_error_min": 6.5,
+      "count": 7,
+      "bias_direction": "calibrated"
+    },
+    "CBD 2": {
+      "mean_error_min": 0.8,
+      "mean_abs_error_min": 0.8,
+      "count": 2,
+      "bias_direction": "calibrated"
+    },
+    "ORR North 2": {
+      "mean_error_min": 3.4,
+      "mean_abs_error_min": 12.1,
+      "count": 5,
+      "bias_direction": "calibrated"
+    },
+    "ORR East 2": {
+      "mean_error_min": -31.3,
+      "mean_abs_error_min": 31.3,
+      "count": 1,
+      "bias_direction": "under-predicts"
+    },
+    "ORR East 1": {
+      "mean_error_min": 3.7,
+      "mean_abs_error_min": 5.8,
+      "count": 4,
+      "bias_direction": "calibrated"
+    },
+    "ORR West 1": {
+      "mean_error_min": -14.0,
+      "mean_abs_error_min": 14.0,
+      "count": 2,
+      "bias_direction": "under-predicts"
+    },
+    "CBD 1": {
+      "mean_error_min": -2.0,
+      "mean_abs_error_min": 2.0,
+      "count": 1,
+      "bias_direction": "calibrated"
+    },
+    "Varthur Road": {
+      "mean_error_min": -3.0,
+      "mean_abs_error_min": 16.0,
+      "count": 2,
+      "bias_direction": "calibrated"
+    }
+  },
+  "accuracy_trend": [
+    {
+      "window_start": 0,
+      "window_end": 20,
+      "accuracy": 0.9,
+      "mae_minutes": 47.4
+    },
+    {
+      "window_start": 20,
+      "window_end": 40,
+      "accuracy": 0.75,
+      "mae_minutes": 18.2
+    },
+    {
+      "window_start": 40,
+      "window_end": 60,
+      "accuracy": 0.9,
+      "mae_minutes": 17.9
+    },
+    {
+      "window_start": 60,
+      "window_end": 80,
+      "accuracy": 0.7,
+      "mae_minutes": 15.7
+    },
+    {
+      "window_start": 80,
+      "window_end": 100,
+      "accuracy": 0.8,
+      "mae_minutes": 39.6
+    },
+    {
+      "window_start": 100,
+      "window_end": 120,
+      "accuracy": 0.8,
+      "mae_minutes": 26.6
+    },
+    {
+      "window_start": 120,
+      "window_end": 140,
+      "accuracy": 0.85,
+      "mae_minutes": 10.1
+    },
+    {
+      "window_start": 140,
+      "window_end": 160,
+      "accuracy": 0.85,
+      "mae_minutes": 21.4
+    },
+    {
+      "window_start": 160,
+      "window_end": 180,
+      "accuracy": 0.9,
+      "mae_minutes": 15.6
+    },
+    {
+      "window_start": 180,
+      "window_end": 200,
+      "accuracy": 0.8,
+      "mae_minutes": 9.7
+    }
+  ],
+  "records": [
+    {
+      "corridor": "Mysore Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 0,
+      "actual_duration_min": 16.1,
+      "predicted_duration_min": 17.4,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": 1.3,
+      "error_pct": 8.1
+    },
+    {
+      "corridor": "ORR North 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 2,
+      "actual_duration_min": 37.9,
+      "predicted_duration_min": 72.1,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 34.2,
+      "error_pct": 90.3
+    },
+    {
+      "corridor": "ORR North 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 19,
+      "actual_duration_min": 144.2,
+      "predicted_duration_min": 119.6,
+      "actual_bucket": "2hr+",
+      "predicted_bucket": "30min-2hr",
+      "correct": false,
+      "error_min": -24.6,
+      "error_pct": -17.1
+    },
+    {
+      "corridor": "Tumkur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 1,
+      "actual_duration_min": 18.0,
+      "predicted_duration_min": 13.7,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -4.3,
+      "error_pct": -24.0
+    },
+    {
+      "corridor": "Magadi Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 21,
+      "actual_duration_min": 7.7,
+      "predicted_duration_min": 5.3,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -2.4,
+      "error_pct": -30.8
+    },
+    {
+      "corridor": "Mysore Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 20,
+      "actual_duration_min": 102.6,
+      "predicted_duration_min": 69.1,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -33.5,
+      "error_pct": -32.6
+    },
+    {
+      "corridor": "Magadi Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 8,
+      "actual_duration_min": 71.7,
+      "predicted_duration_min": 46.4,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -25.4,
+      "error_pct": -35.3
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "others",
+      "hour": 18,
+      "actual_duration_min": 32.5,
+      "predicted_duration_min": 41.3,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 8.8,
+      "error_pct": 27.0
+    },
+    {
+      "corridor": "ORR North 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 2,
+      "actual_duration_min": 18.8,
+      "predicted_duration_min": 15.6,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -3.3,
+      "error_pct": -17.4
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 6,
+      "actual_duration_min": 7.6,
+      "predicted_duration_min": 8.1,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": 0.5,
+      "error_pct": 5.9
+    },
+    {
+      "corridor": "Tumkur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 1,
+      "actual_duration_min": 21.5,
+      "predicted_duration_min": 20.9,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -0.6,
+      "error_pct": -2.7
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "procession",
+      "hour": 7,
+      "actual_duration_min": 19.3,
+      "predicted_duration_min": 14.9,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -4.4,
+      "error_pct": -22.7
+    },
+    {
+      "corridor": "Tumkur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 21,
+      "actual_duration_min": 9.5,
+      "predicted_duration_min": 11.6,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": 2.1,
+      "error_pct": 21.9
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "others",
+      "hour": 7,
+      "actual_duration_min": 1403.8,
+      "predicted_duration_min": 651.7,
+      "actual_bucket": "2hr+",
+      "predicted_bucket": "2hr+",
+      "correct": true,
+      "error_min": -752.1,
+      "error_pct": -53.6
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 0,
+      "actual_duration_min": 24.7,
+      "predicted_duration_min": 28.2,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": 3.5,
+      "error_pct": 14.3
+    },
+    {
+      "corridor": "Old Airport Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 6,
+      "actual_duration_min": 118.1,
+      "predicted_duration_min": 108.4,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -9.7,
+      "error_pct": -8.2
+    },
+    {
+      "corridor": "Mysore Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 20,
+      "actual_duration_min": 23.0,
+      "predicted_duration_min": 23.5,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": 0.4,
+      "error_pct": 1.9
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 8,
+      "actual_duration_min": 29.2,
+      "predicted_duration_min": 35.1,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "30min-2hr",
+      "correct": false,
+      "error_min": 6.0,
+      "error_pct": 20.4
+    },
+    {
+      "corridor": "Tumkur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 2,
+      "actual_duration_min": 19.7,
+      "predicted_duration_min": 11.4,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -8.3,
+      "error_pct": -42.2
+    },
+    {
+      "corridor": "ORR North 1",
+      "event_cause": "others",
+      "hour": 6,
+      "actual_duration_min": 65.1,
+      "predicted_duration_min": 87.1,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 22.0,
+      "error_pct": 33.7
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 6,
+      "actual_duration_min": 35.0,
+      "predicted_duration_min": 33.0,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -2.0,
+      "error_pct": -5.7
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 5,
+      "actual_duration_min": 147.6,
+      "predicted_duration_min": 173.0,
+      "actual_bucket": "2hr+",
+      "predicted_bucket": "2hr+",
+      "correct": true,
+      "error_min": 25.4,
+      "error_pct": 17.2
+    },
+    {
+      "corridor": "Bellary Road 2",
+      "event_cause": "accident",
+      "hour": 5,
+      "actual_duration_min": 39.6,
+      "predicted_duration_min": 41.4,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 1.8,
+      "error_pct": 4.5
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 7,
+      "actual_duration_min": 45.7,
+      "predicted_duration_min": 51.9,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 6.3,
+      "error_pct": 13.8
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 21,
+      "actual_duration_min": 32.7,
+      "predicted_duration_min": 35.1,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 2.4,
+      "error_pct": 7.5
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 23,
+      "actual_duration_min": 113.7,
+      "predicted_duration_min": 104.5,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -9.3,
+      "error_pct": -8.1
+    },
+    {
+      "corridor": "Bannerghata Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 5,
+      "actual_duration_min": 132.0,
+      "predicted_duration_min": 147.2,
+      "actual_bucket": "2hr+",
+      "predicted_bucket": "2hr+",
+      "correct": true,
+      "error_min": 15.3,
+      "error_pct": 11.6
+    },
+    {
+      "corridor": "Tumkur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 10,
+      "actual_duration_min": 9.2,
+      "predicted_duration_min": 9.0,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -0.2,
+      "error_pct": -2.2
+    },
+    {
+      "corridor": "ORR North 1",
+      "event_cause": "accident",
+      "hour": 5,
+      "actual_duration_min": 50.1,
+      "predicted_duration_min": 35.5,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -14.7,
+      "error_pct": -29.2
+    },
+    {
+      "corridor": "ORR North 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 6,
+      "actual_duration_min": 109.1,
+      "predicted_duration_min": 127.0,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "2hr+",
+      "correct": false,
+      "error_min": 17.9,
+      "error_pct": 16.4
+    },
+    {
+      "corridor": "Old Airport Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 6,
+      "actual_duration_min": 16.0,
+      "predicted_duration_min": 15.6,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -0.4,
+      "error_pct": -2.4
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "water_logging",
+      "hour": 6,
+      "actual_duration_min": 167.0,
+      "predicted_duration_min": 112.2,
+      "actual_bucket": "2hr+",
+      "predicted_bucket": "30min-2hr",
+      "correct": false,
+      "error_min": -54.7,
+      "error_pct": -32.8
+    },
+    {
+      "corridor": "Hosur Road",
+      "event_cause": "others",
+      "hour": 20,
+      "actual_duration_min": 330.2,
+      "predicted_duration_min": 369.2,
+      "actual_bucket": "2hr+",
+      "predicted_bucket": "2hr+",
+      "correct": true,
+      "error_min": 39.0,
+      "error_pct": 11.8
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 11,
+      "actual_duration_min": 12.2,
+      "predicted_duration_min": 12.0,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -0.2,
+      "error_pct": -1.6
+    },
+    {
+      "corridor": "Tumkur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 1,
+      "actual_duration_min": 34.0,
+      "predicted_duration_min": 24.1,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "<30min",
+      "correct": false,
+      "error_min": -9.9,
+      "error_pct": -29.2
+    },
+    {
+      "corridor": "Hennur Main Road",
+      "event_cause": "congestion",
+      "hour": 5,
+      "actual_duration_min": 115.8,
+      "predicted_duration_min": 127.5,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "2hr+",
+      "correct": false,
+      "error_min": 11.8,
+      "error_pct": 10.2
+    },
+    {
+      "corridor": "Hennur Main Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 4,
+      "actual_duration_min": 100.6,
+      "predicted_duration_min": 132.9,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "2hr+",
+      "correct": false,
+      "error_min": 32.3,
+      "error_pct": 32.2
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "construction",
+      "hour": 20,
+      "actual_duration_min": 329.1,
+      "predicted_duration_min": 432.4,
+      "actual_bucket": "2hr+",
+      "predicted_bucket": "2hr+",
+      "correct": true,
+      "error_min": 103.3,
+      "error_pct": 31.4
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 4,
+      "actual_duration_min": 68.5,
+      "predicted_duration_min": 62.0,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -6.5,
+      "error_pct": -9.5
+    },
+    {
+      "corridor": "Old Madras Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 18,
+      "actual_duration_min": 55.2,
+      "predicted_duration_min": 44.6,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -10.6,
+      "error_pct": -19.2
+    },
+    {
+      "corridor": "Old Airport Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 5,
+      "actual_duration_min": 28.4,
+      "predicted_duration_min": 23.0,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -5.3,
+      "error_pct": -18.8
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 7,
+      "actual_duration_min": 51.7,
+      "predicted_duration_min": 38.6,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": -13.1,
+      "error_pct": -25.4
+    },
+    {
+      "corridor": "Mysore Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 0,
+      "actual_duration_min": 41.3,
+      "predicted_duration_min": 54.7,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 13.4,
+      "error_pct": 32.4
+    },
+    {
+      "corridor": "Old Airport Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 21,
+      "actual_duration_min": 74.8,
+      "predicted_duration_min": 90.5,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 15.6,
+      "error_pct": 20.9
+    },
+    {
+      "corridor": "Tumkur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 4,
+      "actual_duration_min": 7.4,
+      "predicted_duration_min": 5.0,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -2.4,
+      "error_pct": -32.2
+    },
+    {
+      "corridor": "Bellary Road 1",
+      "event_cause": "vehicle_breakdown",
+      "hour": 22,
+      "actual_duration_min": 14.1,
+      "predicted_duration_min": 10.1,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -4.0,
+      "error_pct": -28.2
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 8,
+      "actual_duration_min": 21.6,
+      "predicted_duration_min": 13.8,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -7.8,
+      "error_pct": -36.0
+    },
+    {
+      "corridor": "Hosur Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 4,
+      "actual_duration_min": 79.3,
+      "predicted_duration_min": 117.7,
+      "actual_bucket": "30min-2hr",
+      "predicted_bucket": "30min-2hr",
+      "correct": true,
+      "error_min": 38.4,
+      "error_pct": 48.4
+    },
+    {
+      "corridor": "Mysore Road",
+      "event_cause": "vehicle_breakdown",
+      "hour": 4,
+      "actual_duration_min": 8.4,
+      "predicted_duration_min": 7.8,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": -0.6,
+      "error_pct": -7.1
+    },
+    {
+      "corridor": "Non-corridor",
+      "event_cause": "vehicle_breakdown",
+      "hour": 20,
+      "actual_duration_min": 1.0,
+      "predicted_duration_min": 5.0,
+      "actual_bucket": "<30min",
+      "predicted_bucket": "<30min",
+      "correct": true,
+      "error_min": 4.0,
+      "error_pct": 403.8
+    }
+  ]
+}
