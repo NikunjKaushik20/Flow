@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="https://via.placeholder.com/1200x300/1a1a2e/47D18C?text=Gridlock+2.0+Command+Center" alt="Gridlock Banner" />
+  <img src="https://via.placeholder.com/1200x300/1a1a2e/47D18C?text=Flow+Command+Center" alt="Flow Banner" />
 
-  <h1>🚦 Gridlock 2.0</h1>
+  <h1>🚦 Flow</h1>
   <p><strong>Autonomous Traffic Incident Triage & Network Optimization Engine</strong></p>
 
   <p>
@@ -31,9 +31,9 @@
 
 ## 🚀 Executive Summary
 
-**Gridlock 2.0** is an end-to-end, AI-driven Command Center designed for modern urban traffic police and city planners. Built strictly within the constraints of the provided Astram dataset, Gridlock bridges the gap between **incoming urban incident reports** and **autonomous ground-force deployment**. 
+**Flow** is an end-to-end, AI-driven Command Center designed for modern urban traffic police and city planners. Built strictly within the constraints of the provided Astram dataset, Flow bridges the gap between **incoming urban incident reports** and **autonomous ground-force deployment**. 
 
-The dataset lacks live congestion state, field response time, weather, and actual vehicle density, which imposes a real ceiling on purely historical models. **Gridlock handles this honestly, avoids data leakage, and converts uncertain forecasts into actionable manpower, barricading, and diversion recommendations.**
+The dataset lacks live congestion state, field response time, weather, and actual vehicle density, which imposes a real ceiling on purely historical models. **Flow handles this honestly, avoids data leakage, and converts uncertain forecasts into actionable manpower, barricading, and diversion recommendations.**
 
 It ingests incoming incidents, predicts clearance durations using a state-of-the-art **Multi-Modal AI Ensemble**, mathematically computes spatial spillover, and solves a Mixed-Integer Linear Program (MILP) to dispatch officers exactly where needed.
 
@@ -62,7 +62,7 @@ Traffic data is inherently noisy. We process raw dumps of incident reports throu
 - **Temporal Harmonics**: Encodes `hour` and `day_of_week` using Sine/Cosine cyclical transformations to preserve the continuous nature of time.
 
 ### Layer 2: The Multi-Modal AI Ensemble
-Traditional models treat traffic incidents as isolated rows. Gridlock understands traffic is a **physical, geometric network**. After testing over 230 configurations, we settled on an **80+15+5 blending strategy** to achieve optimal accuracy while maintaining over 70% recall on catastrophic 2hr+ jams:
+Traditional models treat traffic incidents as isolated rows. Flow understands traffic is a **physical, geometric network**. After testing over 230 configurations, we settled on an **80+15+5 blending strategy** to achieve optimal accuracy while maintaining over 70% recall on catastrophic 2hr+ jams:
 
 1. **Optimized Tree Ensembles — 80% Weight**
    - A heavy blend of LightGBM + AdaBoost + CatBoost. Excellent at handling tabular distributions and dense categorical embeddings.
@@ -82,7 +82,7 @@ Using Bureau of Public Roads (BPR) delay formulas, the `/api/simulate` endpoint 
 Crucially, **diversion routing is 100% data-derived**. The system routes traffic using our endogenous graph penalized by **learned historical spillover weights** (how often two corridors congest within 30 mins of each other), completely avoiding any "outsourced reasoning" via external APIs.
 
 ### Layer 5: Post-Event Learning & GNN Finetuning (MLOps)
-Hackathon models die in production. Gridlock survives. 
+Hackathon models die in production. Flow survives. 
 The `04_post_event_learning.py` loop autonomously ingests newly resolved incidents daily from an SQLite database. It calculates explicit feature drift and automatically adjusts ensemble blending weights via softmax. Further, it triggers **on-the-fly PyTorch finetuning** of the GNN to adapt to shifting city traffic patterns permanently.
 
 ---
