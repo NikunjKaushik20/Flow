@@ -179,7 +179,7 @@ function App() {
           </div>
           <div className="stat-tile">
             <span>Model</span>
-            <strong>{metricsData?.model?.best_approach === 'Tree 80% + GNN 15% + AutoGluon 5%' ? '85+10+5 Blend' : 'Ensemble'}</strong>
+            <strong>{metricsData?.model?.best_approach === 'Tree 80% + GNN 15% + AutoGluon 5%' ? '80+15+5 Blend' : 'Ensemble'}</strong>
             <small>{metricsData?.model?.selected_models ? metricsData.model.selected_models.join(' + ') : 'LightGBM + AdaBoost + CatBoost'}</small>
           </div>
         </section>

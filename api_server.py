@@ -1209,7 +1209,7 @@ def get_metrics():
     model_metrics = {
         "accuracy": 0.577,
         "macro_f1": 0.549,
-        "critical_recall": 0.706,
+        "critical_recall": 0.735,
         "best_approach": "Tree 80% + GNN 15% + AutoGluon 5%",
         "selected_models": ["LightGBM", "CatBoost", "GraphSAGE", "AutoGluon"],
         "<30min": {"precision": 0.52, "recall": 0.48, "f1-score": 0.50, "support": 489},
@@ -1230,7 +1230,7 @@ def get_metrics():
                 if "existing_ensemble" in data:
                     model_metrics["accuracy"] = data["existing_ensemble"].get("accuracy", 0.577)
                     model_metrics["macro_f1"] = data["existing_ensemble"].get("macro_f1", 0.549)
-                    model_metrics["critical_recall"] = data["existing_ensemble"].get("critical_recall", 0.706)
+                    model_metrics["critical_recall"] = data["existing_ensemble"].get("critical_recall", 0.735)
         except Exception as e:
             print(f"Error loading metrics: {e}")
     
