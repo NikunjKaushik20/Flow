@@ -3,7 +3,7 @@ import { Users, Shield, Navigation, TrendingDown } from 'lucide-react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from 'recharts';
 
 // Use relative URL when proxy is configured, absolute URL for direct access
-const API = import.meta.env.PROD ? 'http://localhost:8000' : '';
+const API = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'http://localhost:8000' : '');
 
 const COLORS = {
   critical: '#FF5D5D',

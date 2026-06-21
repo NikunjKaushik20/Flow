@@ -14,7 +14,7 @@ import ModelIntelligence from './components/ModelIntelligence';
 import NetworkGraph from './components/NetworkGraph';
 
 // Use relative URL when proxy is configured, absolute URL for direct access
-const API = import.meta.env.PROD ? 'http://localhost:8000' : '';
+const API = import.meta.env.VITE_API_URL || (import.meta.env.PROD ? 'http://localhost:8000' : '');
 
 const MapUpdater = ({ center, zoom }) => {
   const map = useMap();
