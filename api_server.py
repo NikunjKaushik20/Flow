@@ -598,7 +598,7 @@ def process_predict_logic(req: Dict[str, Any]):
         'has_end_coord', 'closure_flag', 'desc_urgency_score', 'day_cos', 'age_of_truck', 
         'month_sin', 'day_sin', 'kw_block', 'is_night', 'hour_sin', 'kw_normal', 'desc_word_count', 
         'high_priority_x_closure', 'longitude_num', 'desc_char_count', 'kw_fire', 'kw_breakdown', 
-        'month_cos', 'kw_spill', 'corridor_cause', 'police_junction', 'address_text'
+        'month_cos', 'kw_spill', 'corridor_cause', 'police_junction', 'address_text', 'incident_span_km_clean'
     ]
     
     cat_features = [
