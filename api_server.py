@@ -893,7 +893,13 @@ def simulate_impact(req: Dict[str, Any]):
                 {"corridor": "Adjacent Arterial 1", "is_event_corridor": False, "peak_delay": 2.8},
                 {"corridor": "Parallel Route A", "is_event_corridor": False, "peak_delay": 1.9},
                 {"corridor": "Cross Street B", "is_event_corridor": False, "peak_delay": 1.4}
-            ]
+            ],
+            "peak_delays": {
+                corridor_closed: 5.0,
+                "Adjacent Arterial 1": 2.8,
+                "Parallel Route A": 1.9,
+                "Cross Street B": 1.4
+            }
         }
         
     corridor_closed = req.get("corridor_closed") or req.get("corridor", "Unknown")
@@ -935,7 +941,8 @@ def simulate_impact(req: Dict[str, Any]):
         "simulation_target": corridor_closed,
         "total_affected": len(affected_corridors),
         "total_delay_vehicle_hours": int(duration_hours * 1500 * len(affected_corridors)),
-        "affected_corridors": affected_corridors
+        "affected_corridors": affected_corridors,
+        "peak_delays": {c["corridor"]: c["peak_delay"] for c in affected_corridors}
     }
 
 @app.post("/api/optimize")
